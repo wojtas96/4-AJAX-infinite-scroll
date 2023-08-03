@@ -1,0 +1,6 @@
+#preloader {
+    position: fixed; /*Przyczepienie do okna przeglądarki*/
+    right: 0;
+    bottom: 0;
+    display: none;  /*Domyślnie się nie pokazuje, dopiero wtedy, gdy pobiera dane*/
+}
