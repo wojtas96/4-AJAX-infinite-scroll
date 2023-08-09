@@ -46,12 +46,12 @@ const getData = () => {
                     body.appendChild(pName); //-,,-
                     body.appendChild(pWebsite); //-,,-
                 }
-                preloading = false;
 
                 hidePreloader();
 
                 console.log(data);
             })
+            
             .catch(error => {
                 console.log(error);
             });
@@ -86,8 +86,6 @@ let d = document.documentElement; //document.documentElement - właściwość, b
         endOfThePage += 1; 
 
         console.log(`Scrolled to the end of page: ${endOfThePage}`); //Ile razy przeskrolowano do końca strony
-
-        showPreloader();
 
         getData();
 
